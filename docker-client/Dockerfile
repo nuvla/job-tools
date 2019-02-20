@@ -1,4 +1,4 @@
-FROM docker:18.09.1-dind
+FROM docker:18.09-dind
 
 VOLUME /root/.docker
 
