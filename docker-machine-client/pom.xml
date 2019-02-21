@@ -53,7 +53,7 @@
           </execution>
         </executions>
         <configuration>
-          <repository>docker.io/nuvla/job-tools/docker-machine-client</repository>
+          <repository>docker.io/nuvla/job-docker-machine-client</repository>
           <tag>${docker-tag}</tag>
           <useMavenSettingsForAuth>true</useMavenSettingsForAuth>
         </configuration>
