@@ -20,7 +20,8 @@
   <modules>
     <module>docker-client</module>
     <module>docker-machine-client</module>
-    <module>docker-compose-client</module>
+    <!--the compose client takes too long, and makes Travis CI timeout-->
+    <!--<module>docker-compose-client</module>-->
   </modules>
 
   <scm>
