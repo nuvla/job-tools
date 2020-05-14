@@ -20,6 +20,7 @@
   <modules>
     <module>docker-client</module>
     <module>docker-machine-client</module>
+    <module>docker-compose-client</module>
   </modules>
 
   <scm>
