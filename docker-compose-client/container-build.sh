@@ -4,7 +4,7 @@ GIT_BRANCH=$(echo ${GITHUB_REF} | awk -F'/' '{print $(NF)}' | sed -e 's/[^a-z0-9
 
 if [[ "${GIT_BRANCH}" == "master" ]]
 then
-  DOCKER_ORG=nuvlabox
+  DOCKER_ORG=nuvla
 else
   DOCKER_ORG=nuvladev
 fi
