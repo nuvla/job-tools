@@ -1,6 +1,17 @@
 #!/bin/bash -xe
 
-MANIFEST=${DOCKER_ORG}/${DOCKER_IMAGE}:${DOCKER_TAG}
+
+GIT_BRANCH=$(echo ${GITHUB_REF} | awk -F'/' '{print $(NF)}' | sed -e 's/[^a-z0-9\._-]/-/g')
+
+if [[ "${GIT_BRANCH}" == "master" ]]
+then
+  DOCKER_ORG=nuvlabox
+else
+  DOCKER_ORG=nuvladev
+fi
+
+DOCKER_IMAGE=job-docker-compose-client
+MANIFEST=${DOCKER_ORG}/${DOCKER_IMAGE}:${GIT_BRANCH}
 
 platforms=(amd64 arm64 arm)
 manifest_args=(${MANIFEST})
