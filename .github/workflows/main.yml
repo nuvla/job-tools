@@ -14,8 +14,8 @@ jobs:
 
       - name: Build and deploy on architecture
         env:
-          DOCKER_USERNAME: ${{ secrets.SIXSQ_DOCKER_USERNAME }}
-          DOCKER_PASSWORD: ${{ secrets.SIXSQ_DOCKER_PASSWORD }}
+          SIXSQ_DOCKER_USERNAME: ${{ secrets.SIXSQ_DOCKER_USERNAME }}
+          SIXSQ_DOCKER_PASSWORD: ${{ secrets.SIXSQ_DOCKER_PASSWORD }}
         run: cd docker-compose-client && ./container-build.sh && ./container-push.sh
 
   job-notify:
