@@ -5,7 +5,7 @@ detailed information about each tool.
 
 ## Copyright
 
-Copyright &copy; 2019, SixSq Sàrl
+Copyright &copy; 2021, SixSq SA
 
 ## License
 
