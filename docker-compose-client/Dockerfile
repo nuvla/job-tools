@@ -1,4 +1,4 @@
-FROM python:3.8-alpine3.12
+FROM python:3.11-alpine3.18
 
 ARG GIT_BRANCH
 ARG GIT_COMMIT_ID
