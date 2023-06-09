@@ -22,8 +22,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Multi-arch docker image build prerequired
-        run: sudo docker run --privileged linuxkit/binfmt:v0.7
+      - name: Set up QEMU for multi-arch docker image build
+        uses: docker/setup-qemu-action@v2
 
       - name: Build and deploy on architecture
         env:
